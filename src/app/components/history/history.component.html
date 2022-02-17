@@ -1,0 +1,16 @@
+<table>
+  <thead>
+  <tr>
+    <th>Number</th>
+    <th>TYPE</th>
+    <th>Amount</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let operation of history.operations">
+    <td>{{operation.accountNumber}}</td>
+    <td>{{operation.type}}</td>
+    <td>{{operation.amount}}</td>
+  </tr>
+  </tbody>
+</table>

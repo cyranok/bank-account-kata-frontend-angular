@@ -1,0 +1,20 @@
+<form [formGroup]="forrm" >
+  <div>
+    <label for="accountNumber">Account number</label>
+    <input id="accountNumber" type="text" formControlName="accountNumber" name="accountNumber" />
+  </div>
+  <div>
+    <label for="amount">Amount</label>
+    <input id="amount" type="number" formControlName="amount" name="amount" />
+  </div>
+
+  <button type="submit" (click)="credit()" >Credit</button>
+</form>
+
+
+<div>
+  <p>
+    Balance:
+    <strong> {{balance}}</strong>
+  </p>
+</div>
